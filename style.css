@@ -14,51 +14,43 @@ html, body{
     min-height: 100vh;
 }
 
-/* intro container start */
+/* intro container with awards start */
 .intro-container{
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-areas: 
     /* 1st row */
-    "navbar header header header header header header header"
+    "navbar header header header header header header header header"
                          
     /* 2nd row */
-    "navbar intro-content intro-content intro-content intro-content retailers retailers retailers"
+    "navbar intro-content intro-content intro-content intro-content intro-content retailers retailers retailers"
                      
     /* 3rd row */
-    "navbar intro-content intro-content intro-content intro-content retailers retailers retailers"
+    "navbar intro-content intro-content intro-content intro-content intro-content retailers retailers retailers"
                          
     /* 4th */
-    "navbar intro-content intro-content intro-content intro-content retailers retailers retailers"
+    "navbar intro-content intro-content intro-content intro-content intro-content retailers retailers retailers"
 
     /* 5th row */
-    "navbar . . . . . . .";   
+    "navbar . . . . . . . ."
+
+    /* 6th row */
+    "navbar . award-1 award-1 award-2 award-2 award-3 award-3 ."
+    
+    /* 7th row */
+    "navbar . award-1 award-1 award-2 award-2 award-3 award-3 ."
+    
+    /* 8th row */
+    "navbar . award-4 award-4 award-5 award-5 award-6 award-6 ."
+    
+    /* 9th row */
+    "navbar . award-4 award-4 award-5 award-5 award-6 award-6 ."
+    
+    ;
 }
-/* intro container end */
+/* intro container with awards end */
 
-/* awards container start */
-.awards-container{
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: 
-        /* 1st row */
-        "navbar award-1 award-1 award-2 award-2 award-3 award-3"
-
-        /* 2nd row */
-        "navbar award-1 award-1 award-2 award-2 award-3 award-3"
-
-        /* 3rd row */
-        "navbar award-4 award-4 award-5 award-5 award-6 award-6"
-
-        /* 4th row */
-        "navbar award-4 award-4 award-5 award-5 award-6 award-6";
-
-        
-
-}
-/* awards container end */
 
 /* intro children start */
 .header{
@@ -70,7 +62,7 @@ html, body{
     grid-area: navbar;
     background-color: orange;
 
-    grid-row: 1 / -1;
+
 }
 
 .intro-content{
