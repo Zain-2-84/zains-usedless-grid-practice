@@ -1,0 +1,7 @@
+@media (max-width: 1200px){
+    .intro-container{
+        /* 6 --> 9 columns, auto does the same thing. */
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(16, minmax(8rem, 1fr));
+    }
+}

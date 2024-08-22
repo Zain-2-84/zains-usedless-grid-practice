@@ -10,15 +10,20 @@ html, body{
     /* height: 100%; */
 }
 
-.intro-container{
+/* .intro-container{
     min-height: 100vh;
-}
+} */
 
 /* intro container with awards start */
 .intro-container{
     display: grid;
-    grid-template-rows: repeat(14, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); */
+
+    /* 9 columns */
     grid-template-columns: repeat(9, 1fr);
+    
+    /* 14 rows */
+    grid-template-rows: repeat(14, minmax(10rem, 1fr));
     grid-template-areas: 
     /* 1st row */
     "navbar header header header header header header header header"
